@@ -1,6 +1,6 @@
 # EXERCISES
 
-## Exercise 1: Introducing More PyTorch Function To Make Your Code More Efficient
+## Exercise 1: Introducing More PyTorch Functions To Make Your Code More Efficient
 
 
 
