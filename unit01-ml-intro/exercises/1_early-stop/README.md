@@ -10,3 +10,5 @@ def train(model, all_x, all_y, epochs):
 ```
 
 However, this can result in executing too many unnecessarily. Modify the `train` function in Section 4 (`4) Implementing the Perceptron` such that it automatically stops when the perceptron classifies the training data perfectly.
+
+Link to exercise notebook: [https://github.com/Lightning-AI/dl-fundamentals/blob/main/unit01-ml-intro/exercises/1_early-stop/exercise_1_early-stop.ipynb](https://github.com/Lightning-AI/dl-fundamentals/blob/main/unit01-ml-intro/exercises/1_early-stop/exercise_1_early-stop.ipynb)
