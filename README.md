@@ -6,8 +6,9 @@
 
 
 
-- Link to the course website:
-- Link to the discussion forum:
+- Link to the course website: 
+- Link to the discussion forum: https://github.com/Lightning-AI/dl-fundamentals/discussions
+- Reach out to Lightning & Sebastian on social media: [@LightningAI](https://twitter.com/LightningAI) [@rasbt](https://twitter.com/rasbt)
 
 
 
