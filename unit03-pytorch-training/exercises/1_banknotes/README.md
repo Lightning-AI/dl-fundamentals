@@ -18,4 +18,5 @@ In this exercise, we are applying logistic regression to a banknote authenticati
 In essence, these four features represent features that were manually extracted from image data. Note that you do not need the details of these features for this exercise. 
 
 However, you are encouraged to explore the dataset further, e.g., by plotting the features, looking at the value ranges, and so forth. (We will skip these steps for brevity in this exercise)
-Link to exercise notebook: ...
+
+Link to exercise notebook: [exercise_1_banknotes.ipynb](https://github.com/Lightning-AI/dl-fundamentals/blob/main/unit03-pytorch-training/exercises/1_banknotes/exercise_1_banknotes.ipynb)
