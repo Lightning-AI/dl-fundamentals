@@ -45,7 +45,12 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 
 
-### Unit 3. Coming Soon
+### Model Training in PyTorch
+
+- [3.6 Training a Logistic Regression Model in PyTorch](https://github.com/Lightning-AI/dl-fundamentals/tree/main/3.6-logreg-in-pytorch)
+- Unit 3 exercises
+  - [Exercise 1: Banknote Authentication](https://github.com/Lightning-AI/dl-fundamentals/tree/main/exercises/1_banknotes)
+  - [Exercise 2: Standardization](https://github.com/Lightning-AI/dl-fundamentals/tree/main/exercises/2_standardization) 
 
 ### Unit 4. Coming Soon
 
