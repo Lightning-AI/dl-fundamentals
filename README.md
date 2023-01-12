@@ -45,14 +45,23 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 
 
-### Model Training in PyTorch
+### Unit 3. Model Training in PyTorch
 
 - [3.6 Training a Logistic Regression Model in PyTorch](https://github.com/Lightning-AI/dl-fundamentals/tree/main/3.6-logreg-in-pytorch)
 - Unit 3 exercises
   - [Exercise 1: Banknote Authentication](https://github.com/Lightning-AI/dl-fundamentals/tree/main/exercises/1_banknotes)
   - [Exercise 2: Standardization](https://github.com/Lightning-AI/dl-fundamentals/tree/main/exercises/2_standardization) 
 
-### Unit 4. Coming Soon
+### Unit 4. Training Multilayer Neural Networks
+
+- [4.3 Training a Multilayer Perceptron in PyTorch](unit04-multilayer-nets/4.3-mlp-pytorch)
+  - [XOR data](unit04-multilayer-nets/4.3-mlp-pytorch/4.3-mlp-pytorch-part1-2-xor)
+  - [MNIST data](unit04-multilayer-nets/4.3-mlp-pytorch/4.3-mlp-pytorch-part3-5-mnist)
+- [4.4 Defining Efficient Data Loaders](unit04-multilayer-nets/4.4-dataloaders)
+- [4.5 Multilayer Neural Networks for Regression](unit04-multilayer-nets/4.5-mlp-regression)
+- Unit 4 exercises
+  - TBA
+
 
 ### Unit 5. Coming Soon
 
