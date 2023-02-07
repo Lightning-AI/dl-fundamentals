@@ -26,7 +26,13 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 ### Unit 1. Welcome to Machine Learning and Deep Learning
 
+- 1.1 What Is Machine Learning?
+- 1.2 How Can We Use Machine Learning?
+- 1.3 A Typical Machine Learning Workflow (The Supervised Learning Workflow)
+- 1.4 The First Machine Learning Classifier
+- 1.5 Setting Up Our Computing Environment
 - [1.6 Implementing a Perceptron in Python](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit01-ml-intro/1.6-perceptron-in-python)
+- 1.7 Evaluating Machine Learning Models
 - Unit 1 exercises
   - [Exercise 1: Add early-stopping to make the Perceptron more efficient](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit01-ml-intro/exercises/1_early-stop)
   - [Exercise 2: Initialize the model parameters with small random numbers instead of 0's](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit01-ml-intro/exercises/2_random-weights)
@@ -34,11 +40,13 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 ### Unit 2. First Steps with PyTorch: Using Tensors
 
+- 2.1 Introducing PyTorch
 - [2.2 What Are Tensors?](https://github.com/Lightning-AI/dl-fundamentals/blob/main/unit02-pytorch-tensors/2.2-tensors/torch-tensors.ipynb)
 - [2.3 How Do We Use Tensors in PyTorch?](https://github.com/Lightning-AI/dl-fundamentals/blob/main/unit02-pytorch-tensors/2.3-using-tensors/top10-tensor-commands.ipynb)
 - [2.4 Improving Code Efficiency with Linear Algebra](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit02-pytorch-tensors/2.4-linalg)
 - [2.5 Debugging Code](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit02-pytorch-tensors/2.5-debugging)
 - [2.6 Revisiting the Perceptron Algorithm](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit02-pytorch-tensors/2.6-revisiting-perceptron)
+- 2.7 Seeing Predictive Models as Computation Graphs
 - Unit 2 exercises
   - [Exercise 1: Introducing more PyTorch functions to make your code more efficient](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit02-pytorch-tensors/exercises/1_torch-where)
   - [Exercise 2: Make the perceptron more efficient using matrix multiplication](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit02-pytorch-tensors/exercises/2_perceptron-matmul)
@@ -47,23 +55,41 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 ### Unit 3. Model Training in PyTorch
 
+- 3.1 Using Logistic Regression for Classification
+- 3.2 The Logistic Regression Computation Graph
+- 3.3 Model Training with Stochastic Gradient Descent
+- 3.4 Automatic Differentiation in PyTorch
+- 3.5 The PyTorch API
 - [3.6 Training a Logistic Regression Model in PyTorch](https://github.com/Lightning-AI/dl-fundamentals/tree/main/3.6-logreg-in-pytorch)
+- 3.7 Feature Normalization
 - Unit 3 exercises
   - [Exercise 1: Banknote Authentication](https://github.com/Lightning-AI/dl-fundamentals/tree/main/exercises/1_banknotes)
   - [Exercise 2: Standardization](https://github.com/Lightning-AI/dl-fundamentals/tree/main/exercises/2_standardization) 
 
 ### Unit 4. Training Multilayer Neural Networks
 
+- 4.1 Dealing with More than Two Classes: Softmax Regression
+- 4.2 Multilayer Neural Networks and Why We Need Them
 - [4.3 Training a Multilayer Perceptron in PyTorch](unit04-multilayer-nets/4.3-mlp-pytorch)
   - [XOR data](unit04-multilayer-nets/4.3-mlp-pytorch/4.3-mlp-pytorch-part1-2-xor)
   - [MNIST data](unit04-multilayer-nets/4.3-mlp-pytorch/4.3-mlp-pytorch-part3-5-mnist)
 - [4.4 Defining Efficient Data Loaders](unit04-multilayer-nets/4.4-dataloaders)
 - [4.5 Multilayer Neural Networks for Regression](unit04-multilayer-nets/4.5-mlp-regression)
-- Unit 4 exercises
-  - TBA
+- 4.6 Speeding Up Model Training Using GPUs
+- [Unit 4 exercises](./unit04-multilayer-nets/exercises)
+  - [Excercise 1: Changing the Number of Layers](./unit04-multilayer-nets/exercises/1_changing-layers)
+  - [Exercise 2: Implementing a Custom Dataset Class for Fashion MNIST](./unit04-multilayer-nets/exercises/2_fashion-mnist)
 
+### Unit 5. Organizing your PyTorch Code with Lightning
 
-### Unit 5. Coming Soon
+- 5.1 Organizing Your Code with PyTorch Lightning
+- [5.2 Training a Multilayer Perceptron in PyTorch Lightning](./unit05-lightning/5.2-mlp-lightning)
+- [5.3 Computing Metrics Efficiently with TorchMetrics](./unit05-lightning/5.3-torchmetrics)
+- [5.4 Making Code Reproducible](./unit05-lightning/5.4-reproducibility)
+- [5.5 Organizing Your Data Loaders with Data Modules](./unit05-lightning/5.5-datamodules)
+- [5.6 The Benefits of Logging Your Model Training](./unit05-lightning/5.6-logging)
+- [5.7 Evaluating and Using Models on New Data](./unit05-lightning/5.7-evaluating)
+- 5.8 Add functionality with callbacks
 
 ### Unit 6. Coming Soon
 

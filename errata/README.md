@@ -10,6 +10,14 @@ The minus sign is flipped in unit 1.4 video 3. It should be -1.14 instead of 1.1
 
 
 
+**Video 4**
+
+Flip x1, x2 3:19 onwards, see [#22](https://github.com/Lightning-AI/dl-fundamentals/discussions/22)
+
+<img src="images/unit-4-4.png" alt="unit-4-4" style="zoom:50%;" />
+
+
+
 ## Unit 1.7
 
 The confusion matrix shows [2, 2] = 3 but it should be [2, 2] = 2.
