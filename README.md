@@ -95,11 +95,11 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 - [6.1 Model Checkpointing and Early Stopping](./unit06-dl-tips/6.1-checkpointing)
 - [6.2 Learning Rates and Learning Rate Schedulers](./unit06-dl-tips/6.2-learning-rates)
-- [6.3 Using More Advanced Optimization Algorithms](./unit06-dl-tips/6.3-optimization-algos)
-- [6.4 Choosing Activation Functions](./unit06-dl-tips/6.4-activation-funcs)
+- 6.3 Using More Advanced Optimization Algorithms
+- 6.4 Choosing Activation Functions
 - [6.5 Automating The Hyperparameter Tuning Process](./unit06-dl-tips/6.5-hparam-opt)
-- [6.6 Improving Convergence with Batch Normalization](./unit06-dl-tips/6.6-batchnorm)
-- [6.7 Reducing Overfitting With Dropout](./unit06-dl-tips/6.7-dropout)
+- 6.6 Improving Convergence with Batch Normalization
+- 6.7 Reducing Overfitting With Dropout
 - [6.8 Debugging Deep Neural Networks](./unit06-dl-tips/6.8-debugging)
 
 
