@@ -13,7 +13,8 @@ from lightning_hpo.distributions.distributions import (
 app = LightningApp(
     Sweep(
         script_path=ops.join(ops.dirname(__file__), "./mlp_cli2.py"),
-        n_trials=3,
+        total_experiments=3,
+        parallel_experiments=1,
         distributions={
             "model.learning_rate": LogUniform(0.001, 0.1),
             "model.hidden_units": Categorical(["[50, 100]", "[100, 200]"]),

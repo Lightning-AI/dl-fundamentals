@@ -8,48 +8,39 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import DataLoader, Dataset
 
 
-class PyTorchMLP2(torch.nn.Module):
-    def __init__(self, num_features, hidden_units, num_classes):
+class PyTorchMLP(torch.nn.Module):
+    def __init__(self, num_features, num_classes):
         super().__init__()
 
-        # Initialize MLP layers
-        all_layers = []
-        for hidden_unit in hidden_units:
-            layer = torch.nn.Linear(num_features, hidden_unit)
-            all_layers.append(layer)
-            all_layers.append(torch.nn.ReLU())
-            num_features = hidden_unit
-
-        output_layer = torch.nn.Linear(
-            in_features=hidden_units[-1], out_features=num_classes
+        self.all_layers = torch.nn.Sequential(
+            # 1st hidden layer
+            torch.nn.Linear(num_features, 100),
+            torch.nn.ReLU(),
+            # 2nd hidden layer
+            torch.nn.Linear(100, 50),
+            torch.nn.ReLU(),
+            # output layer
+            torch.nn.Linear(50, num_classes),
         )
-
-        all_layers.append(output_layer)
-        self.layers = torch.nn.Sequential(*all_layers)
 
     def forward(self, x):
         x = torch.flatten(x, start_dim=1)
-        logits = self.layers(x)
+        logits = self.all_layers(x)
         return logits
 
 
-class LightningModel2(L.LightningModule):
-    def __init__(self, model=None, hidden_units=None, learning_rate=None):
+class LightningModel(L.LightningModule):
+    def __init__(self, model=None, learning_rate=None):
         super().__init__()
 
         self.learning_rate = learning_rate
-        self.hidden_units = hidden_units
-
-        if model is None:
-            self.model = PyTorchMLP2(
-                num_features=100, hidden_units=hidden_units, num_classes=2
-            )
+        self.model = model
 
         self.save_hyperparameters(ignore=["model"])
 
-        self.train_acc = torchmetrics.Accuracy()
-        self.val_acc = torchmetrics.Accuracy()
-        self.test_acc = torchmetrics.Accuracy()
+        self.train_acc = torchmetrics.Accuracy(task="multiclass", num_classes=2)
+        self.val_acc = torchmetrics.Accuracy(task="multiclass", num_classes=2)
+        self.test_acc = torchmetrics.Accuracy(task="multiclass", num_classes=2)
 
     def forward(self, x):
         return self.model(x)
@@ -110,8 +101,9 @@ class CustomDataset(Dataset):
 
 
 class CustomDataModule(L.LightningDataModule):
-    def __init__(self, batch_size=64):
+    def __init__(self, data_dir="./mnist", batch_size=64):
         super().__init__()
+        self.data_dir = data_dir
         self.batch_size = batch_size
 
     def prepare_data(self):
@@ -156,24 +148,24 @@ class CustomDataModule(L.LightningDataModule):
     def train_dataloader(self):
         train_loader = DataLoader(
             dataset=self.train_dataset,
-            batch_size=32,
+            batch_size=self.batch_size,
             shuffle=True,
             drop_last=True,
-            num_workers=0,
+            num_workers=2,
         )
         return train_loader
 
     def val_dataloader(self):
         val_loader = DataLoader(
             dataset=self.val_dataset,
-            batch_size=32,
+            batch_size=self.batch_size,
             shuffle=False,
-            num_workers=0,
+            num_workers=2,
         )
         return val_loader
 
     def test_dataloader(self):
         test_loader = DataLoader(
-            dataset=self.test_dataset, batch_size=32, shuffle=False, num_workers=0
+            dataset=self.test_dataset, batch_size=self.batch_size, shuffle=False, num_workers=2
         )
         return test_loader
