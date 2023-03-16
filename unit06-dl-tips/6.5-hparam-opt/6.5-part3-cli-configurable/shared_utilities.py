@@ -47,9 +47,9 @@ class LightningModel2(L.LightningModule):
 
         self.save_hyperparameters(ignore=["model"])
 
-        self.train_acc = torchmetrics.Accuracy()
-        self.val_acc = torchmetrics.Accuracy()
-        self.test_acc = torchmetrics.Accuracy()
+        self.train_acc = torchmetrics.Accuracy(task="multiclass", num_classes=2)
+        self.val_acc = torchmetrics.Accuracy(task="multiclass", num_classes=2)
+        self.test_acc = torchmetrics.Accuracy(task="multiclass", num_classes=2)
 
     def forward(self, x):
         return self.model(x)
@@ -110,8 +110,9 @@ class CustomDataset(Dataset):
 
 
 class CustomDataModule(L.LightningDataModule):
-    def __init__(self, batch_size=64):
+    def __init__(self, data_dir="./mnist", batch_size=64):
         super().__init__()
+        self.data_dir = data_dir
         self.batch_size = batch_size
 
     def prepare_data(self):
