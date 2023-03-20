@@ -15,7 +15,7 @@ if __name__ == "__main__":
         model_class=LightningModel,
         datamodule_class=CustomDataModule,
         run=False,
-        save_config_overwrite=True,
+        save_config_overwrite=None,
         seed_everything_default=123,
         trainer_defaults={
             "max_epochs": 10,
