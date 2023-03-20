@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dl-fundamentals"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "dl_fundamentals"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "^2.0.0"
+ipykernel = "^6.22.0"
+numpy = "^1.24.2"
+watermark = "^2.3.1"
+pandas = "^1.5.3"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
