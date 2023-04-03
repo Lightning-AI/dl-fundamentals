@@ -71,7 +71,7 @@ class LightningModel(L.LightningModule):
         self.log("val_acc", self.val_acc, prog_bar=True)
 
     def test_step(self, batch, batch_idx):
-        loss, true_labels, predicted_labels = self._shared_step(batch)
+        _, true_labels, predicted_labels = self._shared_step(batch)
         self.test_acc(predicted_labels, true_labels)
         self.log("test_acc", self.test_acc)
 
