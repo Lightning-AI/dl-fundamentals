@@ -90,6 +90,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - [5.6 The Benefits of Logging Your Model Training](./unit05-lightning/5.6-logging)
 - [5.7 Evaluating and Using Models on New Data](./unit05-lightning/5.7-evaluating)
 - 5.8 Add functionality with callbacks
+- [Unit 5 exercises](./unit05-lightning/exercises)
 
 ### Unit 6. Essential Deep Learning Tips & Tricks
 
@@ -101,10 +102,21 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - 6.6 Improving Convergence with Batch Normalization
 - 6.7 Reducing Overfitting With Dropout
 - [6.8 Debugging Deep Neural Networks](./unit06-dl-tips/6.8-debugging)
+- [Unit 6 exercises](./unit06-dl-tips/exercises)
 
 
+### Unit 7. Getting Started with Computer Vision
 
-### Unit 7. Coming Soon
+- 7.1 Working With Images
+- 7.2 How Convolutional Neural Networks Work
+- 7.3 Convolutional Neural Network Architectures
+- [7.4 Training Convolutional Neural Networks](./unit07-computer-vision/unit07-computer-vision/7.4-cnn-training)
+- [7.5 Improving Predictions with Data Augmentation](./unit07-computer-vision/unit07-computer-vision/)
+- [7.6 Leveraging Pre-trained Models with Transfer Learning](./unit07-computer-vision/unit07-computer-vision/)
+- [7.7 Using Unlabeled Data with Self-Supervised](./unit07-computer-vision/unit07-computer-vision/)
+- [Unit 7 exercises](./unit07-computer-vision/exercises)
+
+
 
 ### Unit 8. Coming Soon
 
