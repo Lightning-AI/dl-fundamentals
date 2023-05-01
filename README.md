@@ -24,7 +24,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 
 
-### Unit 1. Welcome to Machine Learning and Deep Learning
+### Unit 1. Welcome to Machine Learning and Deep Learning [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/unit-1/) ] 
 
 - 1.1 What Is Machine Learning?
 - 1.2 How Can We Use Machine Learning?
@@ -38,7 +38,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
   - [Exercise 2: Initialize the model parameters with small random numbers instead of 0's](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit01-ml-intro/exercises/2_random-weights)
   - [Exercise 3: Use a learning rate for updating the weights and bias unit](https://github.com/Lightning-AI/dl-fundamentals/tree/main/unit01-ml-intro/exercises/3_learning-rate)
 
-### Unit 2. First Steps with PyTorch: Using Tensors
+### Unit 2. First Steps with PyTorch: Using Tensors [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/2-0-unit-2-overview/) ] 
 
 - 2.1 Introducing PyTorch
 - [2.2 What Are Tensors?](https://github.com/Lightning-AI/dl-fundamentals/blob/main/unit02-pytorch-tensors/2.2-tensors/torch-tensors.ipynb)
@@ -53,7 +53,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 
 
-### Unit 3. Model Training in PyTorch
+### Unit 3. Model Training in PyTorch [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/3-0-overview-model-training-in-pytorch/) ] 
 
 - 3.1 Using Logistic Regression for Classification
 - 3.2 The Logistic Regression Computation Graph
@@ -66,7 +66,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
   - [Exercise 1: Banknote Authentication](https://github.com/Lightning-AI/dl-fundamentals/tree/main/exercises/1_banknotes)
   - [Exercise 2: Standardization](https://github.com/Lightning-AI/dl-fundamentals/tree/main/exercises/2_standardization) 
 
-### Unit 4. Training Multilayer Neural Networks
+### Unit 4. Training Multilayer Neural Networks [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/training-multilayer-neural-networks-overview/) ] 
 
 - 4.1 Dealing with More than Two Classes: Softmax Regression
 - 4.2 Multilayer Neural Networks and Why We Need Them
@@ -80,7 +80,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
   - [Excercise 1: Changing the Number of Layers](./unit04-multilayer-nets/exercises/1_changing-layers)
   - [Exercise 2: Implementing a Custom Dataset Class for Fashion MNIST](./unit04-multilayer-nets/exercises/2_fashion-mnist)
 
-### Unit 5. Organizing your PyTorch Code with Lightning
+### Unit 5. Organizing your PyTorch Code with Lightning [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/overview-organizing-your-code-with-pytorch-lightning/) ] 
 
 - 5.1 Organizing Your Code with PyTorch Lightning
 - [5.2 Training a Multilayer Perceptron in PyTorch Lightning](./unit05-lightning/5.2-mlp-lightning)
@@ -92,7 +92,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - 5.8 Add functionality with callbacks
 - [Unit 5 exercises](./unit05-lightning/exercises)
 
-### Unit 6. Essential Deep Learning Tips & Tricks
+### Unit 6. Essential Deep Learning Tips & Tricks [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/unit-6-overview-essential-deep-learning-tips-tricks/) ] 
 
 - [6.1 Model Checkpointing and Early Stopping](./unit06-dl-tips/6.1-checkpointing)
 - [6.2 Learning Rates and Learning Rate Schedulers](./unit06-dl-tips/6.2-learning-rates)
@@ -105,7 +105,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - [Unit 6 exercises](./unit06-dl-tips/exercises)
 
 
-### Unit 7. Getting Started with Computer Vision
+### Unit 7. Getting Started with Computer Vision [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/unit-7-overview-getting-started-with-computer-vision/) ] 
 
 - 7.1 Working With Images
 - 7.2 How Convolutional Neural Networks Work
@@ -118,7 +118,15 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 
 
-### Unit 8. Coming Soon
+### Unit 8. Introduction to Natural Language Processing and Large Language Models
+
+- 8.1 Working with Text Data
+- [8.2 Training Text Classifier Baseline](unit08-large-language-models/8.2-bag-of-words)
+- 8.3. Introduction to Recurrent Neural Networks
+- 8.4 From RNNas to the Transformer Architecture
+- 8.5 Understanding Self-Attention
+- 8.6 Large Language Models
+- [8.7 Using Large Language Model for Classification](unit08-large-language-models/8.7-distilbert-finetuning)
 
 ### Unit 9. Coming Soon
 
