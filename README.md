@@ -127,6 +127,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - 8.5 Understanding Self-Attention
 - 8.6 Large Language Models
 - [8.7 Using Large Language Model for Classification](unit08-large-language-models/8.7-distilbert-finetuning)
+- [Unit 8 exercises](unit08-large-language-models/exercises)
 
 ### Unit 9. Coming Soon
 
