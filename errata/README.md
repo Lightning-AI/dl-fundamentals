@@ -23,3 +23,16 @@ Flip x1, x2 3:19 onwards, see [#22](https://github.com/Lightning-AI/dl-fundament
 The confusion matrix shows [2, 2] = 3 but it should be [2, 2] = 2.
 
 <img src="images/unit-1.7-cm.png" alt="unit-1.7-cm" style="zoom:33%;" />
+
+
+## Unit 3.3
+
+It should be 
+
+$$w + \Delta w$$
+
+where 
+
+$$\Delta w = - \alpha \nabla L_w$$
+
+(the minus sign was missing on one slide)
