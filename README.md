@@ -118,7 +118,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 
 
 
-### Unit 8. Introduction to Natural Language Processing and Large Language Models
+### Unit 8. Introduction to Natural Language Processing and Large Language Models  [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/unit-8.0-natural-language-processing-and-large-language-models/) ] 
 
 - 8.1 Working with Text Data
 - [8.2 Training Text Classifier Baseline](unit08-large-language-models/8.2-bag-of-words)
@@ -129,6 +129,12 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - [8.7 Using Large Language Model for Classification](unit08-large-language-models/8.7-distilbert-finetuning)
 - [Unit 8 exercises](unit08-large-language-models/exercises)
 
-### Unit 9. Coming Soon
+### Unit 9. Speeding Up Model Training
+
+- [9.1 Accelerated Model Training via Mixed-Precision Training](unit09-performance/9.1-mixed-precision)
+- 9.2 Multi-GPU Training Strategies
+- [9.3 Deep Dive Into Data Parallelism](unit09-performance/9.3-multi-gpu)
+- [9.4 Compiling PyTorch Models](unit09-performance/9.4-compile)
+- [9.5 Increasing Batch Sizes to Increase Throughput](unit09-performance/9.5-batchsize-finder)
 
 ### Unit 10. Coming Soon

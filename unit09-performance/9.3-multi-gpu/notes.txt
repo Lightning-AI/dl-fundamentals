@@ -1,0 +1,132 @@
+- torch       : 1.13.1
+- lightning   : 2.0.0.dev0
+- transformers: 4.26.1
+- A100
+
+### lightning-trainer.py,  1 gpu
+
+    trainer = L.Trainer(
+        max_epochs=3,
+        callbacks=callbacks,
+        precision="16",
+        accelerator="gpu",
+        devices=[1],
+        logger=logger,
+        log_every_n_steps=10,
+        deterministic=True
+    )
+
+- Memory usage: 19656MiB
+- Time: 5.55
+
+### lightning-trainer.py,  4 gpu, DDP
+
+    trainer = L.Trainer(
+        max_epochs=3,
+        callbacks=callbacks,
+        precision="16",
+        accelerator="gpu",
+        strategy="ddp",
+        devices=[0, 1, 2, 3],
+        logger=logger,
+        log_every_n_steps=10,
+        deterministic=True
+    )
+
+- Memory usage: 19186MiB
+- Time: 2.33
+
+### lightning-trainer.py,  4 gpu, fsdp
+
+    trainer = L.Trainer(
+        max_epochs=3,
+        callbacks=callbacks,
+        precision="16",
+        accelerator="gpu",
+        strategy="fsdp",
+        devices=[0, 1, 2, 3],
+        logger=logger,
+        log_every_n_steps=10,
+        deterministic=True
+    )
+
+- Memory usage: 13818MiB
+- Time: 1.9
+- Test acc: 0.926800012588501
+
+### lightning-trainer.py,  4 gpu, deepspeed-stage-2
+
+    trainer = L.Trainer(
+        max_epochs=3,
+        callbacks=callbacks,
+        precision="16",
+        accelerator="gpu",
+        strategy="deepspeed_stage_2",
+        devices=[0, 1, 2, 3],
+        logger=logger,
+        log_every_n_steps=10,
+        deterministic=True
+    )
+
+
+- pip install -U deepspeed, (installed 0.8.1)
+- Memory usage: 15218MiB
+- Time: 1.74 min
+- Test acc: 0.932200014591217
+
+### lightning-trainer.py,  4 gpu, deepspeed-stage-2 offload
+
+    trainer = L.Trainer(
+        max_epochs=3,
+        callbacks=callbacks,
+        precision="16",
+        accelerator="gpu",
+        strategy="deepspeed_stage_2_offload",
+        devices=[0, 1, 2, 3],
+        logger=logger,
+        log_every_n_steps=10,
+        deterministic=True
+    )
+
+- Memory usage: 15018MiB
+- Time: 5.34 min
+- Test acc: 0.9319999814033508
+
+### lightning-trainer.py,  4 gpu, deepspeed-stage-3
+
+    trainer = L.Trainer(
+        max_epochs=3,
+        callbacks=callbacks,
+        precision="16",
+        accelerator="gpu",
+        strategy="deepspeed_stage_3",
+        devices=[0, 1, 2, 3],
+        logger=logger,
+        log_every_n_steps=10,
+        deterministic=True
+    )
+
+- Memory usage:  15002MiB
+- Time: 1.72 min
+- Test acc: 
+
+
+### lightning-trainer.py,  4 gpu, deepspeed-stage-3 offload
+
+    trainer = L.Trainer(
+        max_epochs=3,
+        callbacks=callbacks,
+        precision="16",
+        accelerator="gpu",
+        strategy="deepspeed_stage_3_offload",
+        devices=[0, 1, 2, 3],
+        logger=logger,
+        log_every_n_steps=10,
+        deterministic=True
+    )
+
+- Memory usage: 14752MiB
+- Time: 
+- Test acc: 
+
+### lightning-trainer.py,  4 gpu, collossal AI
