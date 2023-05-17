@@ -129,12 +129,13 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - [8.7 Using Large Language Model for Classification](unit08-large-language-models/8.7-distilbert-finetuning)
 - [Unit 8 exercises](unit08-large-language-models/exercises)
 
-### Unit 9. Techniques for Speeding Up Model Training
+### Unit 9. Techniques for Speeding Up Model Training  [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/9.0-overview-techniques-for-speeding-up-model-training/) ] 
 
 - [9.1 Accelerated Model Training via Mixed-Precision Training](unit09-performance/9.1-mixed-precision)
 - 9.2 Multi-GPU Training Strategies
 - [9.3 Deep Dive Into Data Parallelism](unit09-performance/9.3-multi-gpu)
 - [9.4 Compiling PyTorch Models](unit09-performance/9.4-compile)
 - [9.5 Increasing Batch Sizes to Increase Throughput](unit09-performance/9.5-batchsize-finder)
+- [Unit 9 exercises](unit09-performance/exercises)
 
 ### Unit 10. Coming Soon
