@@ -15,7 +15,8 @@ if __name__ == "__main__":
         model_class=LightningModel2,
         datamodule_class=CustomDataModule,
         run=False,
-        save_config_overwrite=True,
+        #save_config_overwrite=True,
+        save_config_kwargs={"overwrite": True}, # for Lightning 2.0 or newer
         seed_everything_default=123,
         trainer_defaults={
             "callbacks": [ModelCheckpoint(monitor="val_acc")],

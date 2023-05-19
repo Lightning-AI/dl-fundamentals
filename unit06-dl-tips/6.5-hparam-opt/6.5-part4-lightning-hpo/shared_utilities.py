@@ -45,6 +45,9 @@ class LightningModel2(L.LightningModule):
                 num_features=100, hidden_units=hidden_units, num_classes=2
             )
 
+        else:
+            self.model = model
+
         self.save_hyperparameters(ignore=["model"])
 
         self.train_acc = torchmetrics.Accuracy(task="multiclass", num_classes=2)
