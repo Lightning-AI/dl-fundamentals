@@ -27,8 +27,8 @@ if __name__ == "__main__":
     )
     trainer.fit(model=lightning_model, datamodule=dm)
 
-    train_acc = trainer.validate(dataloaders=dm.train_dataloader())[0]["val_acc"]
-    val_acc = trainer.validate(datamodule=dm)[0]["val_acc"]
+    train_acc = trainer.test(dataloaders=dm.train_dataloader())[0]["test_acc"]
+    val_acc = trainer.test(dataloaders=dm.val_dataloader())[0]["test_acc"]
     test_acc = trainer.test(datamodule=dm)[0]["test_acc"]
     print(
         f"Train Acc {train_acc*100:.2f}%"
