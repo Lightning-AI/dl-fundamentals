@@ -138,4 +138,10 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - [9.5 Increasing Batch Sizes to Increase Throughput](unit09-performance/9.5-batchsize-finder)
 - [Unit 9 exercises](unit09-performance/exercises)
 
-### Unit 10. Coming Soon
+### Unit 10. The Finale: Our Next Steps After AI Model Training
+
+- [10.1 Trustworthy and Reliable Machine Learning](unit10-after-training/10.1-confidence-intervals)
+- [10.2 Fabric - Scaling PyTorch Model Training without Boilerplate Code](unit10-after-training/10.2-fabric)
+- 10.3 Designing Machine Learning Systems
+- 10.4 Conclusion
+- Unit 10 exercises
