@@ -144,4 +144,4 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - [10.2 Fabric - Scaling PyTorch Model Training without Boilerplate Code](unit10-after-training/10.2-fabric)
 - 10.3 Designing Machine Learning Systems
 - 10.4 Conclusion
-- Unit 10 exercises
+- [Unit 10 exercises](unit10-after-training/exercises)
