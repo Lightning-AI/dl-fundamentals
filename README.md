@@ -138,7 +138,7 @@ For other announcements, updates, and additional materials, you can follow [Ligh
 - [9.5 Increasing Batch Sizes to Increase Throughput](unit09-performance/9.5-batchsize-finder)
 - [Unit 9 exercises](unit09-performance/exercises)
 
-### Unit 10. The Finale: Our Next Steps After AI Model Training
+### Unit 10. The Finale: Our Next Steps After AI Model Training  [ [Link to videos](https://lightning.ai/pages/courses/deep-learning-fundamentals/10.0-overview-the-finale-our-next-steps-after-ai-model-training/) ] 
 
 - [10.1 Trustworthy and Reliable Machine Learning](unit10-after-training/10.1-confidence-intervals)
 - [10.2 Fabric - Scaling PyTorch Model Training without Boilerplate Code](unit10-after-training/10.2-fabric)
