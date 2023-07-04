@@ -12,7 +12,7 @@ In particular, your task is to replace the `torch.optim.lr_scheduler.CosineAnnea
  `LinearWarmupCosineAnnealingLR` class from the PyTorch Lightning Bolts library, which can be installed via 
 
 
-    pip install pl-bolts
+    pip install lightning-bolts
 
 And you can find more about the `LinearWarmupCosineAnnealingLR` usage in the [documentation here](https://pytorch-lightning-bolts.readthedocs.io/en/latest/schedulers/warmup_cosine_annealing.html)
 
