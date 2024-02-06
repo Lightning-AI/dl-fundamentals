@@ -34,7 +34,7 @@ def get_dataset_loaders():
         root="./mnist", train=False, transform=transforms.ToTensor()
     )
 
-    train_dataset, val_dataset = random_split(train_dataset, lengths=[55000, 5000])
+    train_dataset, val_dataset = random_split(train_dataset, lengths=[55000, 5000], generator=torch.Generator().manual_seed(42))
 
     train_loader = DataLoader(
         dataset=train_dataset,

@@ -88,7 +88,7 @@ class MnistDataModule(L.LightningDataModule):
             download=False,
         )
 
-        self.train, self.valid = random_split(train, lengths=[55000, 5000])
+        self.train, self.valid = random_split(train, lengths=[55000, 5000], generator=torch.Generator().manual_seed(42))
 
     def train_dataloader(self):
         train_loader = DataLoader(

@@ -101,7 +101,7 @@ class MNISTDataModule(L.LightningDataModule):
         mnist_full = datasets.MNIST(
             self.data_dir, transform=transforms.ToTensor(), train=True
         )
-        self.mnist_train, self.mnist_val = random_split(mnist_full, [55000, 5000])
+        self.mnist_train, self.mnist_val = random_split(mnist_full, [55000, 5000], generator=torch.Generator().manual_seed(42))
 
     def train_dataloader(self):
         return DataLoader(
@@ -168,7 +168,7 @@ class AmesHousingDataModule(L.LightningDataModule):
 
     def setup(self, stage: str):
         all_data = AmesHousingDataset(csv_path='AmesHousing.txt')
-        temp, self.val = random_split(all_data, [2500, 429], 
+        temp, self.val = random_split(all_data, [2500, 429],
                                       torch.Generator().manual_seed(1))
         self.train, self.test = random_split(temp, [2000, 500],
                                              torch.Generator().manual_seed(1))

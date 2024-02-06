@@ -95,10 +95,10 @@ class TinyImageNetDataset(Dataset):
 
         if self.transform is not None:
             img = self.transform(img)
-        
+
         label = self.label_index[self.labels[index]]
         return img, label
-    
+
     def __len__(self):
         return len(self.labels)
 
@@ -194,8 +194,8 @@ class TinyImageNetDataModule(L.LightningDataModule):
             transform=self.test_transform,
         )
 
-        self.train, self.valid = random_split(train, lengths=[90000, 10000])
-        
+        self.train, self.valid = random_split(train, lengths=[90000, 10000], generator=torch.Generator().manual_seed(42))
+
 
     def train_dataloader(self):
         return DataLoader(
@@ -214,7 +214,7 @@ class TinyImageNetDataModule(L.LightningDataModule):
             shuffle=False,
             num_workers=self.num_workers,
         )
-    
+
     def test_dataloader(self):
         return DataLoader(
             dataset=self.test,
