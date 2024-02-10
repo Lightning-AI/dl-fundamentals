@@ -1,3 +1,7 @@
+# Exercise 2: Weight Decay
+
+
+
 The task of this exercise is to experiment with weight decay. Note that we haven't covered weight decay in the lecture. Related to Dropout (which we covered in Unit 6), weight decay is a regularization technique used in training neural networks to prevent overfitting.
 
 Traditionally, a related method called L2-regularization is used to add a penalty term to the loss function (e.g., the cross entropy loss) that encourages the network to learn smaller weight coefficients. And smaller weights can often lead to less overfitting. That's because smaller weights can help with overfitting. They encourage the model to learn simpler, more generalizable patterns from the training data, rather than fitting the noise or capturing complex, specific patterns that may not generalize well to new, unseen data.
